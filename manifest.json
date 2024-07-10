@@ -1,0 +1,17 @@
+{
+    "name": "ITcramm Github",
+    "short_name": "ITcramm",
+    "theme_color": "#242424",
+    "background_color": "#272727",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "https://itcramm.github.io/",
+    "description": "A level IT notes website",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "https://itcramm.github.io/icon.png",
+            "sizes": "1024x1024"
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Divs</title>
+<style>
+  /* CSS for the toggle functionality */
+  .hidden {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<!-- Div to be clicked -->
+<div class="clickable" onclick="toggleDivs()">
+  Click Me
+</div>
+
+<!-- Divs to be shown/hidden -->
+<div class="hidden" id="div1">
+  Div 1 Content
+</div>
+<div class="hidden" id="div2">
+  Div 2 Content
+</div>
+
+<!-- Another toggleable div -->
+<div class="clickable" onclick="toggleDiv3()">
+  Click Me for Div 3
+</div>
+<div class="hidden" id="div3">
+  Div 3 Content
+</div>
+
+<!-- Other elements below the divs -->
+<div>
+  Other content
+</div>
+
+<script>
+  function toggleDivs() {
+    // Toggle the display of div1
+    var div1 = document.getElementById("div1");
+    div1.style.display = (div1.style.display === 'none') ? 'block' : 'none';
+
+    // Toggle the display of div2
+    var div2 = document.getElementById("div2");
+    div2.style.display = (div2.style.display === 'none') ? 'block' : 'none';
+  }
+
+  function toggleDiv3() {
+    // Toggle the display of div3
+    var div3 = document.getElementById("div3");
+    div3.style.display = (div3.style.display === 'none') ? 'block' : 'none';
+  }
+</script>
+
+</body>
+</html>
